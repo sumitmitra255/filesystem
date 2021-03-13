@@ -44,7 +44,7 @@ export const MainContentArea = (props) => {
 				<div>
 					{children?.map((ele, i) => {
 						return (
-							<div key={i}>
+							<div key={i} onClick={showDrawer}>
 								<FolderOpenOutlined key={i} />
 								{ele.title}
 							</div>
